@@ -1,0 +1,1 @@
+docker run -p 4000:4000 -p 8080:8080 -d --name my-ss -e XROAD_TOKEN_PIN=1234 xroad-security-server-local

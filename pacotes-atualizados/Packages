@@ -1,0 +1,511 @@
+Package: xroad-addon-hwtokens
+Source: xroad
+Version: 7.8.0-0.gitca449eb.ubuntu22.04
+Architecture: amd64
+Maintainer: NIIS <info@niis.org>
+Installed-Size: 389
+Depends: xroad-base (= 7.8.0-0.gitca449eb.ubuntu22.04), xroad-confclient (= 7.8.0-0.gitca449eb.ubuntu22.04), xroad-signer (= 7.8.0-0.gitca449eb.ubuntu22.04)
+Breaks: xroad-signer (<< 7.1.0)
+Replaces: xroad-signer (<< 7.1.0)
+Filename: ./xroad-addon-hwtokens_7.8.0-0.gitca449eb.ubuntu22.04_amd64.deb
+Size: 251116
+MD5sum: 70f3f7d3f34b99c633ad398f448d12ac
+SHA1: 91f417024c34dadace269cc304b2063ebf631938
+SHA256: 72890996f76f533688cedd12e4f2b54eebf0071b4dbd7d941c38f216367f8f22
+Section: X-Road
+Priority: extra
+Description: X-Road AddOn: hwtokens
+ AddOn for hardware tokens
+
+Package: xroad-addon-messagelog
+Source: xroad
+Version: 7.8.0-0.gitca449eb.ubuntu22.04
+Architecture: all
+Maintainer: NIIS <info@niis.org>
+Installed-Size: 117045
+Depends: xroad-proxy (= 7.8.0-0.gitca449eb.ubuntu22.04)
+Conflicts: xroad-addon-legacy-securelog
+Filename: ./xroad-addon-messagelog_7.8.0-0.gitca449eb.ubuntu22.04_all.deb
+Size: 105846842
+MD5sum: 0f1a5c0034af081eef5943aa448eac8f
+SHA1: 10af16da7491267a7203161e2826b6101b79e599
+SHA256: 713c2e1527d4a5a78a8f6c70998afe57e2857710af6eec4e72c0367e65f15717
+Section: X-Road
+Priority: extra
+Description: X-Road AddOn: messagelog
+ AddOn for secure message log
+
+Package: xroad-addon-metaservices
+Source: xroad
+Version: 7.8.0-0.gitca449eb.ubuntu22.04
+Architecture: all
+Maintainer: NIIS <info@niis.org>
+Installed-Size: 196
+Depends: xroad-proxy (= 7.8.0-0.gitca449eb.ubuntu22.04)
+Filename: ./xroad-addon-metaservices_7.8.0-0.gitca449eb.ubuntu22.04_all.deb
+Size: 182452
+MD5sum: 823d62014bc3bd8e0be8b9a4638c340a
+SHA1: e9ab573c2ecb6ca3c0123fb74b5b8a410f120ff3
+SHA256: b6e840c53b37f46cc6c3536a0a57726bb674342451cf23c209d16d578347b830
+Section: X-Road
+Priority: extra
+Description: X-Road AddOn: metaservices
+ AddOn for metaservice reponders
+
+Package: xroad-addon-opmonitoring
+Source: xroad
+Version: 7.8.0-0.gitca449eb.ubuntu22.04
+Architecture: all
+Maintainer: NIIS <info@niis.org>
+Installed-Size: 186
+Depends: xroad-proxy (= 7.8.0-0.gitca449eb.ubuntu22.04), xroad-opmonitor (= 7.8.0-0.gitca449eb.ubuntu22.04)
+Filename: ./xroad-addon-opmonitoring_7.8.0-0.gitca449eb.ubuntu22.04_all.deb
+Size: 172244
+MD5sum: b78bf221f57f37325bf9dffc15022af3
+SHA1: 1cc21468dbb44dba44fea606f5ca01a1093319df
+SHA256: 6440ee504f73b52d0dc2b784dcb0649578ffbbe1f7f63bef39eacf7788287780
+Section: X-Road
+Priority: extra
+Description: X-Road AddOn: operations monitoring service
+ AddOn for operations monitoring.
+
+Package: xroad-addon-proxymonitor
+Source: xroad
+Version: 7.8.0-0.gitca449eb.ubuntu22.04
+Architecture: all
+Maintainer: NIIS <info@niis.org>
+Installed-Size: 276
+Depends: xroad-proxy (= 7.8.0-0.gitca449eb.ubuntu22.04), xroad-monitor (= 7.8.0-0.gitca449eb.ubuntu22.04)
+Filename: ./xroad-addon-proxymonitor_7.8.0-0.gitca449eb.ubuntu22.04_all.deb
+Size: 250582
+MD5sum: fef734010bd21b2263629d4297079960
+SHA1: e1f148e7e70e141117391692e155649a5227119f
+SHA256: b74ba96827888f82f70fe8acb61963373a542fa6baafc89c87bd012fa800d7f7
+Section: X-Road
+Priority: extra
+Description: X-Road AddOn: proxy monitoring metaservice
+ Addon for proxy monitoring
+
+Package: xroad-addon-wsdlvalidator
+Source: xroad
+Version: 7.8.0-0.gitca449eb.ubuntu22.04
+Architecture: all
+Maintainer: NIIS <info@niis.org>
+Installed-Size: 9277
+Depends: xroad-proxy (= 7.8.0-0.gitca449eb.ubuntu22.04)
+Filename: ./xroad-addon-wsdlvalidator_7.8.0-0.gitca449eb.ubuntu22.04_all.deb
+Size: 8515580
+MD5sum: 0e11cdbb888ce6cfcd1fb3506d619a35
+SHA1: 35571b339e3d8063dc8c6b4054949d15383f6652
+SHA256: efd6bcfb81930a35da0e112307c58bec32da490b3b09838354cdd516ab352ba1
+Section: X-Road
+Priority: extra
+Description: X-Road AddOn: wsdlvalidator
+ AddOn for WSDL validator for the X-Road services
+
+Package: xroad-autologin
+Source: xroad
+Version: 7.8.0-0.gitca449eb.ubuntu22.04
+Architecture: all
+Maintainer: NIIS <info@niis.org>
+Installed-Size: 136
+Depends: expect, xroad-signer (= 7.8.0-0.gitca449eb.ubuntu22.04)
+Conflicts: aux-xroad-autologin (<< 1.4-1)
+Replaces: aux-xroad-autologin (<< 1.4-1)
+Filename: ./xroad-autologin_7.8.0-0.gitca449eb.ubuntu22.04_all.deb
+Size: 116620
+MD5sum: f9e40a7d75d656ed233cc55cbedf7d4f
+SHA1: daff5cc00046e99c76c726eb2d1dfa0d446345f2
+SHA256: b8b255d77b5506b824e4b66e1d3dc6411b6b5fd46c6032d5b7f145acd7da8187
+Section: X-Road
+Priority: extra
+Description: Automatic token pin code entry
+ Optional utility that automatically enters the software token pin code on xroad-signer start
+
+Package: xroad-base
+Source: xroad
+Version: 7.8.0-0.gitca449eb.ubuntu22.04
+Architecture: amd64
+Maintainer: NIIS <info@niis.org>
+Installed-Size: 3904
+Pre-Depends: dpkg (>= 1.15.7.2)
+Depends: debconf (>= 0.5) | debconf-2.0, openjdk-21-jre-headless | java21-runtime-headless | java21-runtime, rlwrap, ca-certificates-java, crudini, adduser, net-tools, iproute2, sudo, openssl, gpg, gpg-agent, bc
+Breaks: xroad-common (<= 6.17.0-0.20171018082348git2ecf68ed)
+Replaces: xroad-common (<= 6.17.0-0.20171018082348git2ecf68ed), xroad-proxy (<< 6.8.9)
+Filename: ./xroad-base_7.8.0-0.gitca449eb.ubuntu22.04_amd64.deb
+Size: 3627728
+MD5sum: a334fa79d3df94e0abdfad89d4a60bd4
+SHA1: da4f47dddaa7faddcb7bb259c06a79d980db51ba
+SHA256: db4db3f66375c4a0f8420acc1ed437631b0f7a0c3efb635e3ddcd3146db2f0a4
+Section: X-Road
+Priority: extra
+Description: X-Road base components
+ X-Road base components and utilities
+
+Package: xroad-center
+Source: xroad
+Version: 7.8.0-0.gitca449eb.ubuntu22.04
+Architecture: all
+Maintainer: NIIS <info@niis.org>
+Installed-Size: 114844
+Pre-Depends: xroad-database-local (= 7.8.0-0.gitca449eb.ubuntu22.04) | xroad-database-remote (= 7.8.0-0.gitca449eb.ubuntu22.04), xroad-base (= 7.8.0-0.gitca449eb.ubuntu22.04)
+Depends: debconf (>= 0.5) | debconf-2.0, rsyslog, curl, unzip, libmhash2, xroad-nginx (= 7.8.0-0.gitca449eb.ubuntu22.04), xroad-signer (= 7.8.0-0.gitca449eb.ubuntu22.04), xroad-confclient (= 7.8.0-0.gitca449eb.ubuntu22.04)
+Conflicts: xroad-confproxy, xroad-proxy, xtee55-center
+Filename: ./xroad-center_7.8.0-0.gitca449eb.ubuntu22.04_all.deb
+Size: 106195378
+MD5sum: f95d69cee44ba9cf024f3cbc8f96668c
+SHA1: 638c15559f0fe1771da97a0ba62e1b289c462b64
+SHA256: d9418cab5e427563348c8d7094f950c55f70d179d5a6a6066d37e237bd7ab9d2
+Section: X-Road
+Priority: extra
+Description: X-Road central server
+ X-Road central server programs and utilities
+
+Package: xroad-center-management-service
+Source: xroad
+Version: 7.8.0-0.gitca449eb.ubuntu22.04
+Architecture: all
+Maintainer: NIIS <info@niis.org>
+Installed-Size: 66173
+Pre-Depends: xroad-base (= 7.8.0-0.gitca449eb.ubuntu22.04), xroad-center (= 7.8.0-0.gitca449eb.ubuntu22.04)
+Depends: xroad-confclient (= 7.8.0-0.gitca449eb.ubuntu22.04)
+Filename: ./xroad-center-management-service_7.8.0-0.gitca449eb.ubuntu22.04_all.deb
+Size: 61239370
+MD5sum: 60cebd210a796164206ddd24c4c99548
+SHA1: 83b03db7f67dde332e379788b85a2cf4781e0e45
+SHA256: 949e3cd3bf787615b23954ccf5158e06e1d064bb722df1401f500198aacd1fda
+Section: X-Road
+Priority: extra
+Description: X-Road Central Server Management Service
+ X-Road Central Server management service component
+
+Package: xroad-center-registration-service
+Source: xroad
+Version: 7.8.0-0.gitca449eb.ubuntu22.04
+Architecture: all
+Maintainer: NIIS <info@niis.org>
+Installed-Size: 66166
+Pre-Depends: xroad-base (= 7.8.0-0.gitca449eb.ubuntu22.04), xroad-center (= 7.8.0-0.gitca449eb.ubuntu22.04)
+Depends: xroad-confclient (= 7.8.0-0.gitca449eb.ubuntu22.04)
+Filename: ./xroad-center-registration-service_7.8.0-0.gitca449eb.ubuntu22.04_all.deb
+Size: 61234228
+MD5sum: dde0f8765e39209debcbcefb8f53be43
+SHA1: 1eddc28a48792e2f36d93b065f64a7a79f04681e
+SHA256: 9fb9bb479b85e0ce2caa6344fde4715cc5aaefa172b26375d731e7b0e8406d4a
+Section: X-Road
+Priority: extra
+Description: X-Road Central Server Registration Service
+ X-Road Central Server registration service component
+
+Package: xroad-centralserver
+Source: xroad
+Version: 7.8.0-0.gitca449eb.ubuntu22.04
+Architecture: all
+Maintainer: NIIS <info@niis.org>
+Installed-Size: 127
+Depends: xroad-center (= 7.8.0-0.gitca449eb.ubuntu22.04), xroad-centralserver-monitoring (= 7.8.0-0.gitca449eb.ubuntu22.04), xroad-center-registration-service (= 7.8.0-0.gitca449eb.ubuntu22.04), xroad-center-management-service (= 7.8.0-0.gitca449eb.ubuntu22.04)
+Conflicts: xroad-securityserver, xtee55-center
+Filename: ./xroad-centralserver_7.8.0-0.gitca449eb.ubuntu22.04_all.deb
+Size: 115760
+MD5sum: c79a7eef506828d4feb266a387112f94
+SHA1: fb9f1a14451e891d17d8858537ff71ec23d28b99
+SHA256: 1752c49f7e3dedb0081f47702f6d4897ed77d37f6f89ef9c4069fd42e4b45e61
+Section: X-Road
+Priority: extra
+Description: X-Road central server
+ This is meta-package of X-Road central server.
+
+Package: xroad-centralserver-monitoring
+Source: xroad
+Version: 7.8.0-0.gitca449eb.ubuntu22.04
+Architecture: all
+Maintainer: NIIS <info@niis.org>
+Installed-Size: 282
+Depends: xroad-center (= 7.8.0-0.gitca449eb.ubuntu22.04)
+Conflicts: xroad-securityserver
+Filename: ./xroad-centralserver-monitoring_7.8.0-0.gitca449eb.ubuntu22.04_all.deb
+Size: 251278
+MD5sum: 3bd96a9f9832b89ef206d55422230c4a
+SHA1: a2259602d3593946d73fafaa4e6146449aaaf2ed
+SHA256: c848a6898bfb22ad756b22435ee43777a3c153f20511201834b2ece8f3f7d75c
+Section: X-Road
+Priority: extra
+Description: Monitoring client configuration for X-Road central
+ X-Road global monitoring configuration file.
+
+Package: xroad-confclient
+Source: xroad
+Version: 7.8.0-0.gitca449eb.ubuntu22.04
+Architecture: amd64
+Maintainer: NIIS <info@niis.org>
+Installed-Size: 52592
+Depends: xroad-base (= 7.8.0-0.gitca449eb.ubuntu22.04)
+Breaks: xroad-common (<= 6.17.0-0.20171018082348git2ecf68ed)
+Replaces: xroad-common (<= 6.17.0-0.20171018082348git2ecf68ed)
+Filename: ./xroad-confclient_7.8.0-0.gitca449eb.ubuntu22.04_amd64.deb
+Size: 48602904
+MD5sum: b79b55b08f4e4df3e6efd7ffb1465222
+SHA1: 703b1a20ea675dc949c60126c57ddb12f1aae445
+SHA256: cbd9dc6ae84cc4c5f2bae62e3eea624d41ebca737edd82d0f79b9388277a5fe4
+Section: X-Road
+Priority: extra
+Description: X-Road configuration client components
+ X-Road configuration client
+
+Package: xroad-confproxy
+Source: xroad
+Version: 7.8.0-0.gitca449eb.ubuntu22.04
+Architecture: all
+Maintainer: NIIS <info@niis.org>
+Installed-Size: 47566
+Pre-Depends: xroad-base (= 7.8.0-0.gitca449eb.ubuntu22.04)
+Depends: debconf (>= 0.5) | debconf-2.0, xroad-confclient (= 7.8.0-0.gitca449eb.ubuntu22.04), xroad-nginx (= 7.8.0-0.gitca449eb.ubuntu22.04), xroad-signer (= 7.8.0-0.gitca449eb.ubuntu22.04)
+Conflicts: xroad-center, xroad-proxy
+Filename: ./xroad-confproxy_7.8.0-0.gitca449eb.ubuntu22.04_all.deb
+Size: 43969080
+MD5sum: fa05696ca273d82dfccf6ec9fcb9b2c2
+SHA1: 5fcf6823badc7ecaa9dd40efcb2120ff3927d21e
+SHA256: 085c689731cb99ed7590866c16f18ccdcb11e78d06b2ccd5bce18d77f190a07e
+Section: X-Road
+Priority: extra
+Description: X-Road configuration proxy
+ X-Road configuration proxy
+
+Package: xroad-database-local
+Source: xroad
+Version: 7.8.0-0.gitca449eb.ubuntu22.04
+Architecture: all
+Maintainer: NIIS <info@niis.org>
+Installed-Size: 18
+Depends: xroad-base (= 7.8.0-0.gitca449eb.ubuntu22.04), postgresql | postgresql-9.4, postgresql-contrib | postgresql-contrib-9.4
+Conflicts: xroad-database-remote
+Filename: ./xroad-database-local_7.8.0-0.gitca449eb.ubuntu22.04_all.deb
+Size: 10878
+MD5sum: 5e0515cd9fad3717723553dc10a4844a
+SHA1: bb1075d3697715f41fefc08a705904d60f09303d
+SHA256: 3116f054b39d3e6953698daf7fa0fab71f31e57e910046276d72595bc18fd00e
+Section: X-Road
+Priority: extra
+Description: Meta-package for X-Road local database dependencies
+
+Package: xroad-database-remote
+Source: xroad
+Version: 7.8.0-0.gitca449eb.ubuntu22.04
+Architecture: all
+Maintainer: NIIS <info@niis.org>
+Installed-Size: 18
+Depends: xroad-base (= 7.8.0-0.gitca449eb.ubuntu22.04), postgresql-client
+Conflicts: xroad-database-local
+Filename: ./xroad-database-remote_7.8.0-0.gitca449eb.ubuntu22.04_all.deb
+Size: 10858
+MD5sum: 833d94f2db4e05a631f99aa31d05dc2c
+SHA1: dba2fd8040730a0e7d369c026d1e0a3d58dde156
+SHA256: 6118fd3b9b624e007a274700f6e73416443cbfb25c994db99de533e3c6c9a89d
+Section: X-Road
+Priority: extra
+Description: Meta-package for X-Road remote database dependencies
+
+Package: xroad-monitor
+Source: xroad
+Version: 7.8.0-0.gitca449eb.ubuntu22.04
+Architecture: all
+Maintainer: NIIS <info@niis.org>
+Installed-Size: 76844
+Depends: xroad-base (= 7.8.0-0.gitca449eb.ubuntu22.04)
+Filename: ./xroad-monitor_7.8.0-0.gitca449eb.ubuntu22.04_all.deb
+Size: 70649576
+MD5sum: bfbf7b114c4c7d893ef61864c266c055
+SHA1: 44fce7f5054cfe0bd06569e9b1f3833cf9ccd144
+SHA256: c22a71d6ad605983c68d3b90763bdb4d73e7ff8d8a1112e096fec267211ff0be
+Section: X-Road
+Priority: extra
+Description: X-Road monitoring service
+ Monitoring service
+
+Package: xroad-nginx
+Source: xroad
+Version: 7.8.0-0.gitca449eb.ubuntu22.04
+Architecture: amd64
+Maintainer: NIIS <info@niis.org>
+Installed-Size: 29
+Pre-Depends: nginx-light (>= 1.5.10) | nginx-core (>= 1.5.10)
+Depends: xroad-base (= 7.8.0-0.gitca449eb.ubuntu22.04)
+Breaks: xroad-common (<= 6.17.0-0.20171018082348git2ecf68ed)
+Replaces: xroad-common (<= 6.17.0-0.20171018082348git2ecf68ed)
+Filename: ./xroad-nginx_7.8.0-0.gitca449eb.ubuntu22.04_amd64.deb
+Size: 12180
+MD5sum: 761af34c867a9f57668137af3dd7c2a4
+SHA1: 48d2c463f9a7c02055a8d9813f615f95615cac3e
+SHA256: cd9bcec8902177802a0417eb9bf04cd198925d346b3d2006ab1223da8ae5c61f
+Section: X-Road
+Priority: extra
+Description: X-Road nginx component
+ X-Road nginx dependencies and configurations
+
+Package: xroad-opmonitor
+Source: xroad
+Version: 7.8.0-0.gitca449eb.ubuntu22.04
+Architecture: all
+Maintainer: NIIS <info@niis.org>
+Installed-Size: 77425
+Pre-Depends: xroad-database-local (= 7.8.0-0.gitca449eb.ubuntu22.04) | xroad-database-remote (= 7.8.0-0.gitca449eb.ubuntu22.04)
+Depends: xroad-base (= 7.8.0-0.gitca449eb.ubuntu22.04), xroad-confclient (= 7.8.0-0.gitca449eb.ubuntu22.04)
+Conflicts: xroad-center
+Filename: ./xroad-opmonitor_7.8.0-0.gitca449eb.ubuntu22.04_all.deb
+Size: 71144280
+MD5sum: 6e7f80caab2d98f3cdb54818d81c45c4
+SHA1: d7388bc323cef51ba894aa49b37d6c03d329e8e2
+SHA256: a0dea4d8b9951b319c2b3e19f952f3245135beebfd9b94d742a26bdd74fe73df
+Section: X-Road
+Priority: extra
+Description: X-Road operations monitoring daemon
+ X-Road operations monitoring daemon
+
+Package: xroad-proxy
+Source: xroad
+Version: 7.8.0-0.gitca449eb.ubuntu22.04
+Architecture: all
+Maintainer: NIIS <info@niis.org>
+Installed-Size: 80521
+Pre-Depends: xroad-database-local (= 7.8.0-0.gitca449eb.ubuntu22.04) | xroad-database-remote (= 7.8.0-0.gitca449eb.ubuntu22.04), xroad-base (= 7.8.0-0.gitca449eb.ubuntu22.04)
+Depends: debconf (>= 0.5) | debconf-2.0, rsyslog, curl, systemd, xroad-confclient (= 7.8.0-0.gitca449eb.ubuntu22.04), xroad-signer (= 7.8.0-0.gitca449eb.ubuntu22.04), openjdk-21-jre-headless | java21-runtime-headless | java21-runtime
+Conflicts: xroad-center, xroad-confproxy
+Filename: ./xroad-proxy_7.8.0-0.gitca449eb.ubuntu22.04_all.deb
+Size: 73965652
+MD5sum: 2499f16ec9a0114dcbfb1489697eb54d
+SHA1: c12bbc7267d49fa2a0743506bf686e530dc47f48
+SHA256: d1e94b3bf9b4d111b29c23384542cce00a0193ed16c28df0ffe291303550cc66
+Section: X-Road
+Priority: extra
+Description: X-Road security server
+ X-Road security server programs and utilities
+
+Package: xroad-proxy-ui-api
+Source: xroad
+Version: 7.8.0-0.gitca449eb.ubuntu22.04
+Architecture: all
+Maintainer: NIIS <info@niis.org>
+Installed-Size: 116528
+Pre-Depends: xroad-base (= 7.8.0-0.gitca449eb.ubuntu22.04)
+Depends: debconf (>= 0.5) | debconf-2.0, xroad-proxy (= 7.8.0-0.gitca449eb.ubuntu22.04)
+Breaks: xroad-jetty9, xroad-nginx
+Replaces: xroad-jetty9, xroad-nginx
+Filename: ./xroad-proxy-ui-api_7.8.0-0.gitca449eb.ubuntu22.04_all.deb
+Size: 107946712
+MD5sum: 35aa34ad8bc735c8f3d7289315eb831c
+SHA1: c43e8d90bf6fdfabe7325229d51640619040fd32
+SHA256: f58f61befb13e460a6d4e5c84176fd44472b322030552441d6648ee75e1f37e0
+Section: X-Road
+Priority: extra
+Description: X-Road proxy UI REST API
+ REST API for X-Road proxy UI and management operations
+
+Package: xroad-securityserver
+Source: xroad
+Version: 7.8.0-0.gitca449eb.ubuntu22.04
+Architecture: all
+Maintainer: NIIS <info@niis.org>
+Installed-Size: 18
+Depends: xroad-proxy (= 7.8.0-0.gitca449eb.ubuntu22.04), xroad-addon-metaservices (= 7.8.0-0.gitca449eb.ubuntu22.04), xroad-addon-messagelog (= 7.8.0-0.gitca449eb.ubuntu22.04), xroad-addon-proxymonitor (= 7.8.0-0.gitca449eb.ubuntu22.04), xroad-addon-wsdlvalidator (= 7.8.0-0.gitca449eb.ubuntu22.04), xroad-proxy-ui-api (= 7.8.0-0.gitca449eb.ubuntu22.04)
+Conflicts: uxp-addon-monitor (<= 6.5), xroad-centralserver
+Filename: ./xroad-securityserver_7.8.0-0.gitca449eb.ubuntu22.04_all.deb
+Size: 10918
+MD5sum: c76789efbec6ed7a5d4e102489d5a2eb
+SHA1: 9db073b55d44f909687590f4b69d2628c38fb859
+SHA256: ace67fde5dc24b02157f85d0fe1e60986d4f28e0faa7831d78f5d4e82ee6a1a6
+Section: X-Road
+Priority: extra
+Description: X-Road security server
+ This is meta-package of X-Road security server.
+
+Package: xroad-securityserver-ee
+Source: xroad
+Version: 7.8.0-0.gitca449eb.ubuntu22.04
+Architecture: all
+Maintainer: NIIS <info@niis.org>
+Installed-Size: 25
+Depends: xroad-securityserver (= 7.8.0-0.gitca449eb.ubuntu22.04), xroad-addon-opmonitoring (= 7.8.0-0.gitca449eb.ubuntu22.04)
+Conflicts: xroad-centralserver
+Filename: ./xroad-securityserver-ee_7.8.0-0.gitca449eb.ubuntu22.04_all.deb
+Size: 11800
+MD5sum: 1888cd127cfb5b238d8feeaacbed7e8d
+SHA1: 0c17f2e8d30f3fa8bbedd0a9193e99b8a4853fb5
+SHA256: 09c86f1c66cdd900664643880fc586e5bb3572dc278c09b53a94b1840538df98
+Section: X-Road
+Priority: extra
+Description: X-Road security server with Estonian settings
+ This is meta-package of X-Road security server with Estonian settings.
+
+Package: xroad-securityserver-fi
+Source: xroad
+Version: 7.8.0-0.gitca449eb.ubuntu22.04
+Architecture: all
+Maintainer: NIIS <info@niis.org>
+Installed-Size: 25
+Depends: xroad-securityserver (= 7.8.0-0.gitca449eb.ubuntu22.04), xroad-addon-opmonitoring (= 7.8.0-0.gitca449eb.ubuntu22.04)
+Conflicts: xroad-centralserver
+Filename: ./xroad-securityserver-fi_7.8.0-0.gitca449eb.ubuntu22.04_all.deb
+Size: 11962
+MD5sum: 6ff367f01113703a3e946781c2f972d7
+SHA1: 32cc75589accd694036d2f23aa083cac3c3c4c37
+SHA256: 7b9862b7bfdbb0adf297dc2da7e51565066b46612ad53e75c82aa52db57318e9
+Section: X-Road
+Priority: extra
+Description: X-Road security server with Finnish settings
+ This is meta-package of X-Road security server with Finnish settings.
+
+Package: xroad-securityserver-fo
+Source: xroad
+Version: 7.8.0-0.gitca449eb.ubuntu22.04
+Architecture: all
+Maintainer: NIIS <info@niis.org>
+Installed-Size: 24
+Depends: xroad-securityserver (= 7.8.0-0.gitca449eb.ubuntu22.04), xroad-addon-opmonitoring (= 7.8.0-0.gitca449eb.ubuntu22.04)
+Conflicts: xroad-centralserver
+Filename: ./xroad-securityserver-fo_7.8.0-0.gitca449eb.ubuntu22.04_all.deb
+Size: 11302
+MD5sum: 307ae6998ae696eef857731bd0952ccd
+SHA1: b1f96390476d95336fe6a1ad7a2bbe2527e347cf
+SHA256: faed35a98564f5b40e60e008b5b59fd069013aa81f84c642c5fdff1b37dd6a5b
+Section: X-Road
+Priority: extra
+Description: X-Road security server with the Faroe Islands' settings
+ This is meta-package of X-Road security server with the Faroe Islands' settings.
+
+Package: xroad-securityserver-is
+Source: xroad
+Version: 7.8.0-0.gitca449eb.ubuntu22.04
+Architecture: all
+Maintainer: NIIS <info@niis.org>
+Installed-Size: 24
+Depends: xroad-securityserver (= 7.8.0-0.gitca449eb.ubuntu22.04), xroad-addon-opmonitoring (= 7.8.0-0.gitca449eb.ubuntu22.04)
+Conflicts: xroad-centralserver
+Filename: ./xroad-securityserver-is_7.8.0-0.gitca449eb.ubuntu22.04_all.deb
+Size: 11228
+MD5sum: ee4fd013708d37142c5a76e2622a0c68
+SHA1: 040b9963e5bc9b21927e9914a1370375851c0e79
+SHA256: b60176a7282e98240e0eaf4f3e260e3b4ce8efbb901dd4d52fd07af5e00b68f3
+Section: X-Road
+Priority: extra
+Description: X-Road security server with Icelandic settings
+ This is meta-package of X-Road security server with Icelandic settings.
+
+Package: xroad-signer
+Source: xroad
+Version: 7.8.0-0.gitca449eb.ubuntu22.04
+Architecture: amd64
+Maintainer: NIIS <info@niis.org>
+Installed-Size: 95269
+Depends: xroad-base (= 7.8.0-0.gitca449eb.ubuntu22.04)
+Breaks: xroad-common (<= 6.17.0-0.20171018082348git2ecf68ed)
+Replaces: xroad-common (<= 6.17.0-0.20171018082348git2ecf68ed)
+Filename: ./xroad-signer_7.8.0-0.gitca449eb.ubuntu22.04_amd64.deb
+Size: 88194636
+MD5sum: e58f9665527c48f2610c24b146473f3e
+SHA1: 50cef98d47efe5824c42432fdd150b5eda62ca04
+SHA256: 37fee779c9cd12b6cd31cfa39b47aeff52ac183030aa4c062b9d269235ebf868
+Section: X-Road
+Priority: extra
+Description: X-Road signer component
+ X-Road signer components and utilities
+

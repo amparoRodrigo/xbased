@@ -175,7 +175,7 @@
      }
   },
   "global":{
-     "appTitle":"Servidor Central X-Road",
+     "appTitle":"Servidor Central X-Based",
      "approve":"Aprovar",
      "class":"Classe",
      "code":"Código",
@@ -292,7 +292,7 @@
      "csIdentification":"Identificação do Servidor Central",
      "initialConfiguration":"Configuração Inicial",
      "instanceIdentifier":{
-        "info":"Código da instância X-Road, identifica unicamente esta instância."
+        "info":"Código da instância X-Based, identifica unicamente esta instância."
      },
      "notification":"Servidor Central inicializado! Agora continue com a configuração completa.",
      "pin":{

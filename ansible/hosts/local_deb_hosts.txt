@@ -1,0 +1,31 @@
+# Example inventory for X-Road installation from local .deb packages
+# This inventory is for Ubuntu/Debian systems only
+
+[lxd_servers]
+localhost ansible_connection=lxd
+
+[cs_servers]
+cs.example.com
+
+[ss_servers]
+ss1.example.com
+ss2.example.com
+
+[cp_servers]
+cp.example.com
+
+[ca_servers]
+ca.example.com
+
+# Group all servers for common configuration
+[local_deb:children]
+cs_servers
+ss_servers
+cp_servers
+ca_servers
+
+[local_deb:vars]
+# Path where .deb packages are located (on Ansible control machine)
+local_deb_source_path=/home/ubuntu/X-Road/pacotes-atualizados
+# Variant selection
+variant=vanilla

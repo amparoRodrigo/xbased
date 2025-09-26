@@ -1,0 +1,16 @@
+#security servers (local)
+[ss_servers]
+localhost ansible_connection=local
+
+#a custom super group for overriding variable defaults
+[local:children]
+ss_servers
+
+### vars ###
+
+[ss_servers:vars]
+variant=vanilla
+local_deb_source_path=/home/ubuntu/X-Road/pacotes-atualizados
+
+[all:vars]
+ansible_python_interpreter=/usr/bin/python3

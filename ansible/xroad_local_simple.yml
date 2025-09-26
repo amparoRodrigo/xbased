@@ -1,0 +1,13 @@
+---
+# Simple playbook for installing X-Road from local .deb packages on localhost
+
+- hosts: ss_servers
+  become: yes
+  become_user: root
+  roles:
+    - local-deb-packages
+    - xroad-ss
+  vars_files:
+    - vars_files/local_deb_repo.yml
+    - vars_files/ss_database.yml
+    - vars_files/base.yml

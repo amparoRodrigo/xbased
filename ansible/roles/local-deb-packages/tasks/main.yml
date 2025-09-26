@@ -1,0 +1,4 @@
+---
+- name: Include Ubuntu tasks for local .deb packages
+  include_tasks: ubuntu.yml
+  when: ansible_os_family == "Debian"

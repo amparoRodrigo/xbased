@@ -1,0 +1,66 @@
+---
+# This playbook installs X-Road from local .deb packages
+
+- hosts: lxd_servers
+  roles:
+    - init-lxd
+  tags:
+    - init
+
+- hosts: ss_servers
+  any_errors_fatal: true
+  tasks:
+    - name: RHEL-support check
+      fail:
+        msg: "Local .deb installation only supports Ubuntu/Debian systems"
+      when: ansible_os_family != "Debian"
+
+- hosts: cs_servers, ss_servers, cp_servers
+  become: yes
+  become_user: root
+  roles:
+    - local-deb-packages
+  vars_files:
+    - vars_files/local_deb_repo.yml
+
+- hosts: cs_servers
+  become: yes
+  become_user: root
+  roles:
+    - xroad-cs
+  tags:
+    - cs
+  vars_files:
+    - vars_files/local_deb_repo.yml
+    - vars_files/cs_database.yml
+    - vars_files/base.yml
+
+- hosts: cp_servers
+  become: yes
+  become_user: root
+  roles:
+    - xroad-cp
+  tags:
+    - cp
+  vars_files:
+    - vars_files/local_deb_repo.yml
+    - vars_files/base.yml
+
+- hosts: ss_servers
+  become: yes
+  become_user: root
+  roles:
+    - xroad-ss
+  tags:
+    - ss
+  vars_files:
+    - vars_files/local_deb_repo.yml
+    - vars_files/ss_database.yml
+    - vars_files/base.yml
+
+- hosts: ca_servers
+  become: yes
+  become_user: root
+  roles:
+    - role: xroad-ca
+      tags: [ 'ca' ]

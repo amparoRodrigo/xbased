@@ -16,7 +16,7 @@ RUN apt-get -qq update \
 ARG uid=1000
 ARG gid=1000
 
-RUN groupadd -o -g $gid builder && useradd -m -u $uid -g $gid builder \
+RUN groupadd -o -g $gid builder && useradd -m -u $uid -g $gid builder -o \
   && mkdir -p /mnt/gradle-cache && chown -R builder:builder /mnt/gradle-cache
 
 USER builder

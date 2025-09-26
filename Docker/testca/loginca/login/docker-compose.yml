@@ -1,0 +1,61 @@
+version: '3.8'
+
+services:
+  # Aplicação Test CA original
+  ca:
+    image: xroad-ca:latest
+    container_name: ca
+    ports:
+      - 8888:8888
+      - 8899:8899
+    volumes:
+      - ca-volume:/home/ca
+    networks:
+      - xroad-network
+
+  # Backend de Autenticação
+  auth-backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: testca-auth-backend
+    ports:
+      - 5000:5000
+    environment:
+      - NODE_ENV=production
+      - JWT_SECRET=your-super-secret-jwt-key-change-this-in-production
+      - EMAIL_USER=${EMAIL_USER}
+      - EMAIL_PASS=${EMAIL_PASS}
+    volumes:
+      - auth-data:/app/data
+    networks:
+      - xroad-network
+    restart: unless-stopped
+
+  # Aplicação de Login React
+  login-app:
+    build:
+      context: .
+      dockerfile: Dockerfile.login
+    container_name: testca-login
+    ports:
+      - 3000:3000
+    environment:
+      - REACT_APP_API_URL=http://localhost:5000/api
+      - REACT_APP_TESTCA_URL=http://localhost:8888/testca
+    networks:
+      - xroad-network
+    depends_on:
+      - auth-backend
+      - ca
+
+volumes:
+  ca-volume:
+    name: ca-data
+  auth-data:
+    name: auth-data
+
+networks:
+  xroad-network:
+    name: xroad-network
+    driver: bridge

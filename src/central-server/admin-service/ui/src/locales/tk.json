@@ -173,7 +173,7 @@
     }
   },
   "global": {
-    "appTitle": "X-Road Merkezi Serwer",
+    "appTitle": "X-Based Merkezi Serwer",
     "approve": "Tassykla",
     "class": "Klass",
     "code": "Kod",
@@ -290,7 +290,7 @@
     "csIdentification": "Merkezi serweri kesgitlemek",
     "initialConfiguration": "Başlangyç konfigurasiýa",
     "instanceIdentifier": {
-      "info": "X-Road-yň nusga kody, bu X-Road nusgasyny ýeke-täk kesgitleýär."
+      "info": "X-Based-yň nusga kody, bu X-Based nusgasyny ýeke-täk kesgitleýär."
     },
     "notification": "Merkezi serwer işe girizildi! Indi doly sazlama işlerini dowam edip bilersiňiz.",
     "pin": {

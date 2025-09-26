@@ -175,7 +175,7 @@
     }
   },
   "global": {
-    "appTitle": "X-Road Central Server",
+    "appTitle": "X-Based Central Server",
     "approve": "Approve",
     "class": "Class",
     "code": "Code",
@@ -292,7 +292,7 @@
     "csIdentification": "Central Server Identification",
     "initialConfiguration": "Initial Configuration",
     "instanceIdentifier": {
-      "info": "X-Road instance code, uniquely identifies this X-Road instance."
+      "info": "X-Based instance code, uniquely identifies this X-Based instance."
     },
     "notification": "The Central Server initialized! Now continue with the full configuration.",
     "pin": {

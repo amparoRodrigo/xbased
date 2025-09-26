@@ -1,0 +1,18 @@
+---
+# Configuration for installing X-Road from local .deb packages
+package_source: "local_deb"
+
+# Local repository configuration for .deb packages
+ubuntu_apt_repo: "deb [trusted=yes] file:///opt/xroad-packages /"
+ubuntu_apt_repo_with_option: "{{ ubuntu_apt_repo }}"
+
+# Dependencies repository (still remote)
+ubuntu_deps_apt_key: "https://artifactory.niis.org/api/gpg/key/public"
+ubuntu_deps_repo_url: "https://artifactory.niis.org/artifactory/xroad-dependencies-deb"
+ubuntu_deps_apt_key_file: "/usr/share/keyrings/xroad-deps.gpg"
+ubuntu_deps_apt_option: "signed-by={{ ubuntu_deps_apt_key_file }}"
+ubuntu_deps_apt_repo_with_option: "deb [{{ ubuntu_deps_apt_option }}] {{ ubuntu_deps_repo_url }} xroad external"
+
+# Local package directory
+local_deb_packages_dir: "/opt/xroad-packages"
+local_deb_source_path: "/home/ubuntu/X-Road/pacotes-atualizados"

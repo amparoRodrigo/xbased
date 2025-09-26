@@ -1,0 +1,45 @@
+---
+- name: Create local packages directory
+  file:
+    path: "{{ local_deb_packages_dir }}"
+    state: directory
+    mode: '0755'
+
+- name: Copy .deb packages to target server
+  copy:
+    src: "{{ item }}"
+    dest: "{{ local_deb_packages_dir }}/"
+    mode: '0644'
+  with_fileglob:
+    - "{{ local_deb_source_path }}/*.deb"
+  when: local_deb_source_path is defined
+
+- name: Install dpkg-dev for package scanning
+  apt:
+    name: dpkg-dev
+    state: present
+    update_cache: yes
+
+- name: Create Packages index
+  shell: "dpkg-scanpackages -m . > Packages"
+  args:
+    chdir: "{{ local_deb_packages_dir }}"
+
+- name: Add X-Road dependencies apt repo key
+  shell: "curl -sL {{ ubuntu_deps_apt_key }} | sudo gpg --dearmor --batch --yes -o {{ ubuntu_deps_apt_key_file }}"
+  when: ansible_distribution == "Ubuntu"
+
+- name: Configure local .deb repository
+  apt_repository:
+    repo: "{{ ubuntu_apt_repo }}"
+    state: present
+    filename: xroad-local
+    update_cache: yes
+
+- name: Configure dependencies repository
+  apt_repository:
+    repo: "{{ ubuntu_deps_apt_repo_with_option }}"
+    state: present
+    filename: xroad-deps
+    update_cache: yes
+  when: ansible_distribution == "Ubuntu"

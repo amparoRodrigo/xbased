@@ -99,7 +99,7 @@
 </template>
 
 <script lang="ts" setup>
-import xroad7Large from '../assets/xroad7_large.svg';
+import xroad7Large from '../assets/xroad7_large.png';
 import { computed } from 'vue';
 import { useForm } from 'vee-validate';
 import { XrdLanguageDropdown } from '@niis/shared-ui';
